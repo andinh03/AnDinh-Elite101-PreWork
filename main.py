@@ -16,6 +16,11 @@ def user_selection():
   number = int(input("Enter the number of your choice: "))
   if number == 4:
     print(f"Goodbye, {name}! Have a nice day!")
+  elif number == 1 or number == 2 or number == 3:
+    print("Please choose other option! ")
+    print("")
+    return options_menu()
+
 
 options_menu()
 user_selection()
