@@ -1,7 +1,8 @@
-print("Welcome to Chatbot 101!")
-name = input("Please enter your name: ")
-age = input(f"Nice to meet you {name}! How old are you? ")
-print(f"Welcome, {name}! Oh, so youthful with your {age} years old! How can I help you? ")
+def chatbot():
+  print("Welcome to Chatbot 101!")
+  name = input("Please enter your name: ")
+  age = input(f"Nice to meet you {name}! How old are you? ")
+  print(f"Welcome, {name}! Oh, so youthful with your {age} years old!           How can I help you? ")
 
 print("")
 
@@ -16,11 +17,7 @@ def user_selection():
   number = int(input("Enter the number of your choice: "))
   if number == 4:
     print(f"Goodbye, {name}! Have a nice day!")
-  elif number == 1 or number == 2 or number == 3:
-    print("Please choose other option! ")
-    print("")
-    return options_menu()
 
-
+chatbot()
 options_menu()
 user_selection()
