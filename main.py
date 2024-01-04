@@ -16,11 +16,15 @@ def options_menu():
   
 def user_selection():  
   number = int(input("Enter the number of your choice: "))
-  if number == 4:
-      print(f"Goodbye, {name}  Have a nice day!")
-  else:
-      return user_selection()
-
-
+  
+  if number == 1:
+      print("Placeholder response 1")
+  elif number == 2:
+      print("Placeholder response 2")
+  elif number == 3:
+    print("Placeholder response 3")
+  elif number == 4:
+    print(f"Goodbye {name}! Have a nice day!")
+  
 options_menu()
 user_selection()
